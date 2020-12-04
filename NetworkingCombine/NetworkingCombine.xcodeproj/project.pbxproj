@@ -7,20 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50DF6F9EBFD6D3AC8B1EBCDD /* Pods_NetworkingCombine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC83C06B573747A738963A52 /* Pods_NetworkingCombine.framework */; };
 		FB0722662576A72F00BF3102 /* TestAPIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0722652576A72F00BF3102 /* TestAPIViewController.swift */; };
 		FB4CBFFA257561A900704A62 /* NetworkingCombineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4CBFF9257561A900704A62 /* NetworkingCombineApp.swift */; };
 		FB4CBFFC257561A900704A62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4CBFFB257561A900704A62 /* ContentView.swift */; };
 		FB4CBFFE257561AB00704A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4CBFFD257561AB00704A62 /* Assets.xcassets */; };
 		FB4CC001257561AB00704A62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4CC000257561AB00704A62 /* Preview Assets.xcassets */; };
 		FB4CC00D25759C8500704A62 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4CC00C25759C8500704A62 /* Data.swift */; };
-		FBCE515825794EFD002D800E /* TestSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCE515725794EFD002D800E /* TestSecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A37BB2E0747D7B2CEC766B8D /* Pods-NetworkingCombine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingCombine.release.xcconfig"; path = "Target Support Files/Pods-NetworkingCombine/Pods-NetworkingCombine.release.xcconfig"; sourceTree = "<group>"; };
-		CC83C06B573747A738963A52 /* Pods_NetworkingCombine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkingCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE5C9D603B2B1530AEE6328F /* Pods-NetworkingCombine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkingCombine.debug.xcconfig"; path = "Target Support Files/Pods-NetworkingCombine/Pods-NetworkingCombine.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0722652576A72F00BF3102 /* TestAPIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAPIViewController.swift; sourceTree = "<group>"; };
 		FB4CBFF6257561A900704A62 /* NetworkingCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB4CBFF9257561A900704A62 /* NetworkingCombineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingCombineApp.swift; sourceTree = "<group>"; };
@@ -29,7 +24,6 @@
 		FB4CC000257561AB00704A62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB4CC002257561AB00704A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB4CC00C25759C8500704A62 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		FBCE515725794EFD002D800E /* TestSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,26 +31,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50DF6F9EBFD6D3AC8B1EBCDD /* Pods_NetworkingCombine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		404C7C6F3C31B7075807813D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CC83C06B573747A738963A52 /* Pods_NetworkingCombine.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		C6F59085E7E93323D03A7DE4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EE5C9D603B2B1530AEE6328F /* Pods-NetworkingCombine.debug.xcconfig */,
-				A37BB2E0747D7B2CEC766B8D /* Pods-NetworkingCombine.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -67,7 +50,6 @@
 				FB4CBFF8257561A900704A62 /* NetworkingCombine */,
 				FB4CBFF7257561A900704A62 /* Products */,
 				C6F59085E7E93323D03A7DE4 /* Pods */,
-				404C7C6F3C31B7075807813D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,7 +71,6 @@
 				FB4CBFFF257561AB00704A62 /* Preview Content */,
 				FB4CC00C25759C8500704A62 /* Data.swift */,
 				FB0722652576A72F00BF3102 /* TestAPIViewController.swift */,
-				FBCE515725794EFD002D800E /* TestSecondViewController.swift */,
 			);
 			path = NetworkingCombine;
 			sourceTree = "<group>";
@@ -109,11 +90,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB4CC005257561AB00704A62 /* Build configuration list for PBXNativeTarget "NetworkingCombine" */;
 			buildPhases = (
-				DB3BA24B00EEC30DC7ACDA13 /* [CP] Check Pods Manifest.lock */,
 				FB4CBFF2257561A900704A62 /* Sources */,
 				FB4CBFF3257561A900704A62 /* Frameworks */,
 				FB4CBFF4257561A900704A62 /* Resources */,
-				FF4BCA8B0A69A98D33E3294F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,48 +147,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		DB3BA24B00EEC30DC7ACDA13 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NetworkingCombine-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FF4BCA8B0A69A98D33E3294F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NetworkingCombine/Pods-NetworkingCombine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NetworkingCombine/Pods-NetworkingCombine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetworkingCombine/Pods-NetworkingCombine-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		FB4CBFF2257561A900704A62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -219,7 +156,6 @@
 				FB4CC00D25759C8500704A62 /* Data.swift in Sources */,
 				FB4CBFFA257561A900704A62 /* NetworkingCombineApp.swift in Sources */,
 				FB0722662576A72F00BF3102 /* TestAPIViewController.swift in Sources */,
-				FBCE515825794EFD002D800E /* TestSecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +280,6 @@
 		};
 		FB4CC006257561AB00704A62 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE5C9D603B2B1530AEE6328F /* Pods-NetworkingCombine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -366,7 +301,6 @@
 		};
 		FB4CC007257561AB00704A62 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A37BB2E0747D7B2CEC766B8D /* Pods-NetworkingCombine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

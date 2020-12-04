@@ -11,54 +11,52 @@ import Combine
 
 struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
-    
-    func publishData() {
-        viewModel.apiNetworkActivitySubscriber = viewModel.Event
-            .sink(receiveCompletion: { completion in
-                print("Completion from passthrough====", completion)
-                
-            }, receiveValue: { value in
-                print("Value from passthrough====",value)
-            })
-    }
-        
+
     var body: some View {
         Text("Call API")
-            .onAppear( perform: {
-                publishData()
-            }
-            )
             .font(.largeTitle)
             .padding()
             .onTapGesture(count: 1, perform: {
                 print("Calling API")
-                viewModel.fetchData()
             })
     }
 }
 
-class Network {
-    func doANetworkFetch() -> AnyPublisher<[JsonDat] , AFError> {
+
+//class Abstraction {
+//
+//    func callAPI<T: Decodable>() -> Void {
+//
+//    }
+//}
+
+class API {
+    func callAPI() -> AnyPublisher<[JsonDat] , AFError> {
         let publisher = AF.request("https://jsonplaceholder.typicode.com/posts")
             .publishDecodable(type: [JsonDat].self)
         return publisher.value()
+       // print("----->",publisher.value())
+        //  //  http://jsonplaceholder.typicode.com/posts
+//        return publisher.eraseToAnyPublisher()
     }
 }
 
 
 class ViewModel: ObservableObject {
     var subscriber: AnyCancellable?
-    var Event = PassthroughSubject<String, Never>()
-    var apiNetworkActivitySubscriber: AnyCancellable?
     
     init() {
-        print("Blank Init")
+        fetchData()
     }
     
     
     //CallAPi can have a codable type T: codable/decaodeable data which might be result of any json parsed API
     func fetchData() {
-        subscriber = Network().doANetworkFetch()
+        subscriber = API().callAPI()
+            //            .mapError({ (error) -> Error in
+            //                print(error)
+            //                return error
+            //            })
             .sink(receiveCompletion: { completion in
                 print(completion)
                 switch completion {
@@ -67,9 +65,9 @@ class ViewModel: ObservableObject {
                 case .failure(let error):
                     fatalError(error.localizedDescription)
                 }
+                
             }, receiveValue: { data in
-                self.Event.send("5")
-               // print("--JSON VALUES-->",data)
+                print("--JSON VALUES-->",data)
             })
     }
     

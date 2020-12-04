@@ -12,7 +12,6 @@ struct NetworkingCombineApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-            
         }
     }
 }
